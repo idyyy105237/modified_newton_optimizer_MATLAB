@@ -14,3 +14,4 @@ Kmax = 1000;
 
 %% Aplicar o algoritmo Método de Newton Modificado
 [w_opt, Fval_opt, output] = MN_modificado1(@F5, @F5_with_grad_hess, w0, epsilon, Kmax)
+

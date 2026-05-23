@@ -4,7 +4,7 @@ clear, clc, close all;
 path(path,'../Problemas/GradHess')
 
 %% BFGS é default
-options=optimoptions('fminunc','Display','iter','SpecifyObjectiveGradient',true); 
+options=optimoptions('fminunc','Display','iter','SpecifyObjectiveGradient',true,'OutputFcn',@outfun); 
 
 %% Ponto inicial : (0,0,0)
 w0=[0;0;0];
